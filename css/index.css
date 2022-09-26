@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto Mono', monospace;
+    position: relative;
+    z-index: -1;
 }
 
 img {
@@ -18,7 +20,20 @@ img {
 .footer {
     position: relative;
     padding: 50px;
-    top: 500px;
+    top: 200px;
     text-align: center; 
     color: darkgray; 
+}
+
+#photos {
+    width: 50%; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+@media (max-width: 800px) {
+    #photos {
+        width: 80%;
+    }
 }
